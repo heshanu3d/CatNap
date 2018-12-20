@@ -17,6 +17,14 @@
 		451D46D921CBC4FD006D8322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451D46D721CBC4FD006D8322 /* LaunchScreen.storyboard */; };
 		451D46E421CBC4FD006D8322 /* CatNapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D46E321CBC4FD006D8322 /* CatNapTests.swift */; };
 		451D46EF21CBC4FD006D8322 /* CatNapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D46EE21CBC4FD006D8322 /* CatNapUITests.swift */; };
+		451D470C21CBCA84006D8322 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 451D470721CBCA84006D8322 /* backgroundMusic.mp3 */; };
+		451D470D21CBCA84006D8322 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 451D470821CBCA84006D8322 /* lose.mp3 */; };
+		451D470E21CBCA84006D8322 /* mrreow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 451D470921CBCA84006D8322 /* mrreow.mp3 */; };
+		451D470F21CBCA84006D8322 /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 451D470A21CBCA84006D8322 /* pop.mp3 */; };
+		451D471021CBCA84006D8322 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 451D470B21CBCA84006D8322 /* win.mp3 */; };
+		451D471321CBD381006D8322 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 451D471221CBD381006D8322 /* Cat.sks */; };
+		451D471521CBEC38006D8322 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = 451D471421CBEC38006D8322 /* CatCurl.sks */; };
+		451D471721CBED13006D8322 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 451D471621CBED13006D8322 /* CatWakeUp.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		451D46EA21CBC4FD006D8322 /* CatNapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatNapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		451D46EE21CBC4FD006D8322 /* CatNapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatNapUITests.swift; sourceTree = "<group>"; };
 		451D46F021CBC4FD006D8322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451D470721CBCA84006D8322 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		451D470821CBCA84006D8322 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		451D470921CBCA84006D8322 /* mrreow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mrreow.mp3; sourceTree = "<group>"; };
+		451D470A21CBCA84006D8322 /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		451D470B21CBCA84006D8322 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		451D471221CBD381006D8322 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
+		451D471421CBEC38006D8322 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
+		451D471621CBED13006D8322 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +119,9 @@
 		451D46C721CBC4FD006D8322 /* CatNap */ = {
 			isa = PBXGroup;
 			children = (
+				451D471121CBD252006D8322 /* Scenes */,
+				451D470621CBCA84006D8322 /* Sounds */,
 				451D46C821CBC4FD006D8322 /* AppDelegate.swift */,
-				451D46CA21CBC4FD006D8322 /* GameScene.sks */,
 				451D46CC21CBC4FD006D8322 /* Actions.sks */,
 				451D46CE21CBC4FD006D8322 /* GameScene.swift */,
 				451D46D021CBC4FD006D8322 /* GameViewController.swift */,
@@ -132,6 +149,29 @@
 				451D46F021CBC4FD006D8322 /* Info.plist */,
 			);
 			path = CatNapUITests;
+			sourceTree = "<group>";
+		};
+		451D470621CBCA84006D8322 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				451D470721CBCA84006D8322 /* backgroundMusic.mp3 */,
+				451D470821CBCA84006D8322 /* lose.mp3 */,
+				451D470921CBCA84006D8322 /* mrreow.mp3 */,
+				451D470A21CBCA84006D8322 /* pop.mp3 */,
+				451D470B21CBCA84006D8322 /* win.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		451D471121CBD252006D8322 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				451D46CA21CBC4FD006D8322 /* GameScene.sks */,
+				451D471221CBD381006D8322 /* Cat.sks */,
+				451D471421CBEC38006D8322 /* CatCurl.sks */,
+				451D471621CBED13006D8322 /* CatWakeUp.sks */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +283,17 @@
 			files = (
 				451D46D421CBC4FD006D8322 /* Main.storyboard in Resources */,
 				451D46CB21CBC4FD006D8322 /* GameScene.sks in Resources */,
+				451D470C21CBCA84006D8322 /* backgroundMusic.mp3 in Resources */,
+				451D470F21CBCA84006D8322 /* pop.mp3 in Resources */,
+				451D471721CBED13006D8322 /* CatWakeUp.sks in Resources */,
+				451D471521CBEC38006D8322 /* CatCurl.sks in Resources */,
 				451D46D621CBC4FD006D8322 /* Assets.xcassets in Resources */,
+				451D471021CBCA84006D8322 /* win.mp3 in Resources */,
+				451D470E21CBCA84006D8322 /* mrreow.mp3 in Resources */,
+				451D470D21CBCA84006D8322 /* lose.mp3 in Resources */,
 				451D46D921CBC4FD006D8322 /* LaunchScreen.storyboard in Resources */,
 				451D46CD21CBC4FD006D8322 /* Actions.sks in Resources */,
+				451D471321CBD381006D8322 /* Cat.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,12 +486,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3M223CXMJ3;
 				INFOPLIST_FILE = CatNap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.CatNap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.zombieKonga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,12 +503,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3M223CXMJ3;
 				INFOPLIST_FILE = CatNap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.personal.CatNap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.zombieKonga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
