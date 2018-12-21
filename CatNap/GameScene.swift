@@ -16,6 +16,8 @@ struct PhysicsCategory {
     static let Bed:   UInt32 = 0b100 // 4
     static let Edge:  UInt32 = 0b1000 // 8
     static let Label: UInt32 = 0b10000 // 16
+    static let Spring: UInt32 = 0b100000 // 32
+    static let Hook: UInt32 = 0b1000000 // 64
 }
 
 protocol EventListenerNode {
@@ -30,6 +32,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var bedNode: BedNode!
     var catNode: CatNode!
     var playable = true
+    var hookBaseNode: HookBaseNode?
     
     override func didMove(to view: SKView) {
         let maxAspectRatio: CGFloat = 16.0/9.0
@@ -42,10 +45,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         physicsWorld.contactDelegate = self
         physicsBody!.categoryBitMask = PhysicsCategory.Edge
         
-        
-        
-        print("playableRect:\(playableRect)")
-        
         enumerateChildNodes(withName: "//*", using: { node, _ in
             if let eventListenerNode = node as? EventListenerNode{
                 eventListenerNode.didMoveToScene()
@@ -54,6 +53,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bedNode = childNode(withName: "bed") as! BedNode
         catNode = childNode(withName: "//cat_body") as! CatNode
         SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
+        hookBaseNode = childNode(withName: "hookBase") as? HookBaseNode
+        
+
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
@@ -74,7 +76,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 node.removeFromParent()
             }
         }
-        if !playable {
+        if !playable && hookBaseNode?.isHooked != true{
             return
         }
         if collision == PhysicsCategory.Cat | PhysicsCategory.Bed {
@@ -83,6 +85,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }else if collision == PhysicsCategory.Cat | PhysicsCategory.Edge {
             playable = false
             lose()
+        }
+        if collision == PhysicsCategory.Hook | PhysicsCategory.Cat && hookBaseNode?.isHooked == false {
+            hookBaseNode?.hookCat(catPhysicsBody: catNode.parent!.physicsBody!)
+        }
+    }
+    
+    override func didSimulatePhysics() {
+        if playable {
+            if abs(catNode.parent!.zRotation) >
+                CGFloat(25).degreesToRadians() {
+                playable = false
+                lose() }
         }
     }
     
@@ -93,10 +107,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func newGame() {
-        let scene = GameScene(fileNamed:"GameScene")
-        scene!.scaleMode = scaleMode
         let transition = SKTransition.doorway(withDuration: 1.0)
+        
+        let scene = GameScene.level(levelNum: currentLevel)
         view!.presentScene(scene!, transition: transition)
+        
     }
     
     func lose() {
@@ -118,4 +133,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         run(SKAction.afterDelay(3, runBlock: newGame))
         catNode.curlAt(scenePoint: bedNode.position)
     }
+    
+    var currentLevel: Int = 0
+    class func level(levelNum: Int) -> GameScene? {
+        let scene = GameScene(fileNamed: "Level\(levelNum)")!
+        scene.currentLevel = levelNum
+        scene.scaleMode = .aspectFill
+        return scene
+    }
 }
+
