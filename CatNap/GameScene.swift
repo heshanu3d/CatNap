@@ -35,6 +35,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var playable = true
     var hookBaseNode: HookBaseNode?
     var seesawNode : SeesawNode?
+    var hintNode : HintNode?
     var currentLevel: Int = 0
     
     override func didMove(to view: SKView) {
@@ -58,6 +59,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
         hookBaseNode = childNode(withName: "hookBase") as? HookBaseNode
         seesawNode = childNode(withName: "Seesaw") as? SeesawNode
+        hintNode = childNode(withName: "hint") as? HintNode
 
     }
     
@@ -128,7 +130,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func win() {
-        if currentLevel < 4 {
+        if currentLevel < 6 {
             currentLevel += 1
         }
         playable = false

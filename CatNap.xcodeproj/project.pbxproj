@@ -25,6 +25,8 @@
 		451D471521CBEC38006D8322 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = 451D471421CBEC38006D8322 /* CatCurl.sks */; };
 		451D471721CBED13006D8322 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 451D471621CBED13006D8322 /* CatWakeUp.sks */; };
 		4526937821CCF2450018A5ED /* launch_cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4526937721CCF2450018A5ED /* launch_cat.jpg */; };
+		4549C6FB21CE040300F830FF /* HintNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549C6FA21CE040300F830FF /* HintNode.swift */; };
+		4559DA8B21CDF42F00776D70 /* DiscoBallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4559DA8A21CDF42F00776D70 /* DiscoBallNode.swift */; };
 		45C0A69021CD0EA40091F541 /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45C0A68F21CD0EA40091F541 /* Level2.sks */; };
 		45C0A69221CD10650091F541 /* SpringNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0A69121CD10650091F541 /* SpringNode.swift */; };
 		45C0A69421CD18BB0091F541 /* HookBaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0A69321CD18BB0091F541 /* HookBaseNode.swift */; };
@@ -32,6 +34,11 @@
 		45C0A69821CDC1150091F541 /* StoneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0A69721CDC1150091F541 /* StoneNode.swift */; };
 		45C0A69A21CDCB740091F541 /* Level4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45C0A69921CDCB740091F541 /* Level4.sks */; };
 		45C0A69C21CDCD3E0091F541 /* SeesawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0A69B21CDCD3E0091F541 /* SeesawNode.swift */; };
+		45C0A6A021CDED540091F541 /* disco-sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 45C0A69E21CDED4C0091F541 /* disco-sound.m4a */; };
+		45C0A6A121CDED540091F541 /* discolights-loop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 45C0A69F21CDED4C0091F541 /* discolights-loop.mov */; };
+		45C0A6A621CDEE1F0091F541 /* Level5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45C0A6A421CDEE1F0091F541 /* Level5.sks */; };
+		45C0A6A721CDEE1F0091F541 /* Level6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45C0A6A521CDEE1F0091F541 /* Level6.sks */; };
+		45C0A6A921CDF0DB0091F541 /* PictureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0A6A821CDF0DB0091F541 /* PictureNode.swift */; };
 		45CA870021CC87B2008BF574 /* BedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA86FF21CC87B2008BF574 /* BedNode.swift */; };
 		45CA870221CC8C7D008BF574 /* CatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA870121CC8C7D008BF574 /* CatNode.swift */; };
 		45CA871021CC9870008BF574 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA870421CC9870008BF574 /* CGFloat+Extensions.swift */; };
@@ -92,6 +99,8 @@
 		451D471421CBEC38006D8322 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
 		451D471621CBED13006D8322 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
 		4526937721CCF2450018A5ED /* launch_cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_cat.jpg; sourceTree = "<group>"; };
+		4549C6FA21CE040300F830FF /* HintNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintNode.swift; sourceTree = "<group>"; };
+		4559DA8A21CDF42F00776D70 /* DiscoBallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoBallNode.swift; sourceTree = "<group>"; };
 		45C0A68F21CD0EA40091F541 /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
 		45C0A69121CD10650091F541 /* SpringNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringNode.swift; sourceTree = "<group>"; };
 		45C0A69321CD18BB0091F541 /* HookBaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookBaseNode.swift; sourceTree = "<group>"; };
@@ -99,6 +108,11 @@
 		45C0A69721CDC1150091F541 /* StoneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoneNode.swift; sourceTree = "<group>"; };
 		45C0A69921CDCB740091F541 /* Level4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level4.sks; sourceTree = "<group>"; };
 		45C0A69B21CDCD3E0091F541 /* SeesawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeesawNode.swift; sourceTree = "<group>"; };
+		45C0A69E21CDED4C0091F541 /* disco-sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "disco-sound.m4a"; sourceTree = "<group>"; };
+		45C0A69F21CDED4C0091F541 /* discolights-loop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "discolights-loop.mov"; sourceTree = "<group>"; };
+		45C0A6A421CDEE1F0091F541 /* Level5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level5.sks; sourceTree = "<group>"; };
+		45C0A6A521CDEE1F0091F541 /* Level6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level6.sks; sourceTree = "<group>"; };
+		45C0A6A821CDF0DB0091F541 /* PictureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureNode.swift; sourceTree = "<group>"; };
 		45CA86FF21CC87B2008BF574 /* BedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedNode.swift; sourceTree = "<group>"; };
 		45CA870121CC8C7D008BF574 /* CatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatNode.swift; sourceTree = "<group>"; };
 		45CA870421CC9870008BF574 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
@@ -167,6 +181,7 @@
 		451D46C721CBC4FD006D8322 /* CatNap */ = {
 			isa = PBXGroup;
 			children = (
+				45C0A69D21CDED4C0091F541 /* media */,
 				451D471121CBD252006D8322 /* Scenes */,
 				451D470621CBCA84006D8322 /* Sounds */,
 				45E47EF921CCA011004C8CDF /* Nodes */,
@@ -214,15 +229,26 @@
 		451D471121CBD252006D8322 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				451D46CA21CBC4FD006D8322 /* Level1.sks */,
 				451D471221CBD381006D8322 /* Cat.sks */,
 				451D471421CBEC38006D8322 /* CatCurl.sks */,
 				451D471621CBED13006D8322 /* CatWakeUp.sks */,
+				451D46CA21CBC4FD006D8322 /* Level1.sks */,
 				45C0A68F21CD0EA40091F541 /* Level2.sks */,
 				45C0A69521CDBEAA0091F541 /* Level3.sks */,
 				45C0A69921CDCB740091F541 /* Level4.sks */,
+				45C0A6A421CDEE1F0091F541 /* Level5.sks */,
+				45C0A6A521CDEE1F0091F541 /* Level6.sks */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		45C0A69D21CDED4C0091F541 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				45C0A69E21CDED4C0091F541 /* disco-sound.m4a */,
+				45C0A69F21CDED4C0091F541 /* discolights-loop.mov */,
+			);
+			path = media;
 			sourceTree = "<group>";
 		};
 		45CA870321CC9870008BF574 /* SKTUtils */ = {
@@ -255,6 +281,9 @@
 				45C0A69321CD18BB0091F541 /* HookBaseNode.swift */,
 				45C0A69721CDC1150091F541 /* StoneNode.swift */,
 				45C0A69B21CDCD3E0091F541 /* SeesawNode.swift */,
+				45C0A6A821CDF0DB0091F541 /* PictureNode.swift */,
+				4559DA8A21CDF42F00776D70 /* DiscoBallNode.swift */,
+				4549C6FA21CE040300F830FF /* HintNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -370,18 +399,22 @@
 				451D46CB21CBC4FD006D8322 /* Level1.sks in Resources */,
 				451D470C21CBCA84006D8322 /* backgroundMusic.mp3 in Resources */,
 				451D470F21CBCA84006D8322 /* pop.mp3 in Resources */,
+				45C0A6A121CDED540091F541 /* discolights-loop.mov in Resources */,
 				451D471721CBED13006D8322 /* CatWakeUp.sks in Resources */,
 				45C0A69A21CDCB740091F541 /* Level4.sks in Resources */,
 				45C0A69021CD0EA40091F541 /* Level2.sks in Resources */,
 				451D471521CBEC38006D8322 /* CatCurl.sks in Resources */,
 				451D46D621CBC4FD006D8322 /* Assets.xcassets in Resources */,
 				451D471021CBCA84006D8322 /* win.mp3 in Resources */,
+				45C0A6A021CDED540091F541 /* disco-sound.m4a in Resources */,
+				45C0A6A621CDEE1F0091F541 /* Level5.sks in Resources */,
 				45C0A69621CDBEAA0091F541 /* Level3.sks in Resources */,
 				4526937821CCF2450018A5ED /* launch_cat.jpg in Resources */,
 				451D470E21CBCA84006D8322 /* mrreow.mp3 in Resources */,
 				451D470D21CBCA84006D8322 /* lose.mp3 in Resources */,
 				451D46D921CBC4FD006D8322 /* LaunchScreen.storyboard in Resources */,
 				451D471321CBD381006D8322 /* Cat.sks in Resources */,
+				45C0A6A721CDEE1F0091F541 /* Level6.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,8 +459,11 @@
 				451D46D121CBC4FD006D8322 /* GameViewController.swift in Sources */,
 				45C0A69421CD18BB0091F541 /* HookBaseNode.swift in Sources */,
 				45C0A69221CD10650091F541 /* SpringNode.swift in Sources */,
+				4549C6FB21CE040300F830FF /* HintNode.swift in Sources */,
 				45CA871821CC9870008BF574 /* SKTAudio.swift in Sources */,
+				4559DA8B21CDF42F00776D70 /* DiscoBallNode.swift in Sources */,
 				45CA871021CC9870008BF574 /* CGFloat+Extensions.swift in Sources */,
+				45C0A6A921CDF0DB0091F541 /* PictureNode.swift in Sources */,
 				451D46C921CBC4FD006D8322 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
