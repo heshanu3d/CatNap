@@ -18,6 +18,7 @@ struct PhysicsCategory {
     static let Label: UInt32 = 0b10000 // 16
     static let Spring: UInt32 = 0b100000 // 32
     static let Hook: UInt32 = 0b1000000 // 64
+    static let Seesaw: UInt32 = 0b10000000 // 128
 }
 
 protocol EventListenerNode {
@@ -33,6 +34,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var catNode: CatNode!
     var playable = true
     var hookBaseNode: HookBaseNode?
+    var seesawNode : SeesawNode?
+    var currentLevel: Int = 0
     
     override func didMove(to view: SKView) {
         let maxAspectRatio: CGFloat = 16.0/9.0
@@ -54,7 +57,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         catNode = childNode(withName: "//cat_body") as! CatNode
         SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
         hookBaseNode = childNode(withName: "hookBase") as? HookBaseNode
-        
+        seesawNode = childNode(withName: "Seesaw") as? SeesawNode
 
     }
     
@@ -88,6 +91,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         if collision == PhysicsCategory.Hook | PhysicsCategory.Cat && hookBaseNode?.isHooked == false {
             hookBaseNode?.hookCat(catPhysicsBody: catNode.parent!.physicsBody!)
+        }else if collision == PhysicsCategory.Seesaw | PhysicsCategory.Cat && seesawNode?.isCatSlipe == false {
+            seesawNode?.isCatSlipe = true
         }
     }
     
@@ -115,17 +120,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func lose() {
-        //1
         SKTAudio.sharedInstance().pauseBackgroundMusic()
         SKTAudio.sharedInstance().playSoundEffect("lose.mp3")
-        //2
         inGameMessage(text: "Try again...")
-        //3
         run(SKAction.afterDelay(5, runBlock: newGame))
         catNode.wakeUp()
     }
     
     func win() {
+        if currentLevel < 4 {
+            currentLevel += 1
+        }
         playable = false
         SKTAudio.sharedInstance().pauseBackgroundMusic()
         SKTAudio.sharedInstance().playSoundEffect("win.mp3")
@@ -134,7 +139,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         catNode.curlAt(scenePoint: bedNode.position)
     }
     
-    var currentLevel: Int = 0
     class func level(levelNum: Int) -> GameScene? {
         let scene = GameScene(fileNamed: "Level\(levelNum)")!
         scene.currentLevel = levelNum

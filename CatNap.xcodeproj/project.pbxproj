@@ -28,6 +28,10 @@
 		45C0A69021CD0EA40091F541 /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45C0A68F21CD0EA40091F541 /* Level2.sks */; };
 		45C0A69221CD10650091F541 /* SpringNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0A69121CD10650091F541 /* SpringNode.swift */; };
 		45C0A69421CD18BB0091F541 /* HookBaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0A69321CD18BB0091F541 /* HookBaseNode.swift */; };
+		45C0A69621CDBEAA0091F541 /* Level3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45C0A69521CDBEAA0091F541 /* Level3.sks */; };
+		45C0A69821CDC1150091F541 /* StoneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0A69721CDC1150091F541 /* StoneNode.swift */; };
+		45C0A69A21CDCB740091F541 /* Level4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45C0A69921CDCB740091F541 /* Level4.sks */; };
+		45C0A69C21CDCD3E0091F541 /* SeesawNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0A69B21CDCD3E0091F541 /* SeesawNode.swift */; };
 		45CA870021CC87B2008BF574 /* BedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA86FF21CC87B2008BF574 /* BedNode.swift */; };
 		45CA870221CC8C7D008BF574 /* CatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA870121CC8C7D008BF574 /* CatNode.swift */; };
 		45CA871021CC9870008BF574 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA870421CC9870008BF574 /* CGFloat+Extensions.swift */; };
@@ -91,6 +95,10 @@
 		45C0A68F21CD0EA40091F541 /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
 		45C0A69121CD10650091F541 /* SpringNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringNode.swift; sourceTree = "<group>"; };
 		45C0A69321CD18BB0091F541 /* HookBaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookBaseNode.swift; sourceTree = "<group>"; };
+		45C0A69521CDBEAA0091F541 /* Level3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level3.sks; sourceTree = "<group>"; };
+		45C0A69721CDC1150091F541 /* StoneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoneNode.swift; sourceTree = "<group>"; };
+		45C0A69921CDCB740091F541 /* Level4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level4.sks; sourceTree = "<group>"; };
+		45C0A69B21CDCD3E0091F541 /* SeesawNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeesawNode.swift; sourceTree = "<group>"; };
 		45CA86FF21CC87B2008BF574 /* BedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedNode.swift; sourceTree = "<group>"; };
 		45CA870121CC8C7D008BF574 /* CatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatNode.swift; sourceTree = "<group>"; };
 		45CA870421CC9870008BF574 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
@@ -211,6 +219,8 @@
 				451D471421CBEC38006D8322 /* CatCurl.sks */,
 				451D471621CBED13006D8322 /* CatWakeUp.sks */,
 				45C0A68F21CD0EA40091F541 /* Level2.sks */,
+				45C0A69521CDBEAA0091F541 /* Level3.sks */,
+				45C0A69921CDCB740091F541 /* Level4.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -243,6 +253,8 @@
 				45FC649B21CCB98100242A20 /* MessageNode.swift */,
 				45C0A69121CD10650091F541 /* SpringNode.swift */,
 				45C0A69321CD18BB0091F541 /* HookBaseNode.swift */,
+				45C0A69721CDC1150091F541 /* StoneNode.swift */,
+				45C0A69B21CDCD3E0091F541 /* SeesawNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -359,10 +371,12 @@
 				451D470C21CBCA84006D8322 /* backgroundMusic.mp3 in Resources */,
 				451D470F21CBCA84006D8322 /* pop.mp3 in Resources */,
 				451D471721CBED13006D8322 /* CatWakeUp.sks in Resources */,
+				45C0A69A21CDCB740091F541 /* Level4.sks in Resources */,
 				45C0A69021CD0EA40091F541 /* Level2.sks in Resources */,
 				451D471521CBEC38006D8322 /* CatCurl.sks in Resources */,
 				451D46D621CBC4FD006D8322 /* Assets.xcassets in Resources */,
 				451D471021CBCA84006D8322 /* win.mp3 in Resources */,
+				45C0A69621CDBEAA0091F541 /* Level3.sks in Resources */,
 				4526937821CCF2450018A5ED /* launch_cat.jpg in Resources */,
 				451D470E21CBCA84006D8322 /* mrreow.mp3 in Resources */,
 				451D470D21CBCA84006D8322 /* lose.mp3 in Resources */,
@@ -392,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C0A69C21CDCD3E0091F541 /* SeesawNode.swift in Sources */,
 				45CA871121CC9870008BF574 /* CGPoint+Extensions.swift in Sources */,
 				45FC649C21CCB98100242A20 /* MessageNode.swift in Sources */,
 				45CA871921CC9870008BF574 /* SKTEffects.swift in Sources */,
@@ -399,6 +414,7 @@
 				451D46CF21CBC4FD006D8322 /* GameScene.swift in Sources */,
 				45CA871721CC9870008BF574 /* SKNode+Extensions.swift in Sources */,
 				45CA870221CC8C7D008BF574 /* CatNode.swift in Sources */,
+				45C0A69821CDC1150091F541 /* StoneNode.swift in Sources */,
 				45CA871A21CC9870008BF574 /* SKTTimingFunctions.swift in Sources */,
 				45CA871521CC9870008BF574 /* SKAction+SpecialEffects.swift in Sources */,
 				45CA871321CC9870008BF574 /* Int+Extensions.swift in Sources */,
